@@ -1,0 +1,527 @@
+-- ============================================
+-- 1. ADMIN TABLE 
+-- ============================================
+-- (Assuming a small number of administrators)
+INSERT INTO admin (username, password) VALUES
+('admin1', 'pass1'),
+('admin2', 'pass2'),
+('admin3', 'pass3'),
+('admin4', 'pass4'),
+('admin5', 'pass5');
+
+
+-- ============================================
+-- 2. USER TABLE 
+-- ============================================
+-- Generate 50 sample users.
+INSERT INTO user (username, name, email, address, password) VALUES
+('user1',  'User One',   'user1@example.com',  '101 First St, CityA', 'pwd1'),
+('user2',  'User Two',   'user2@example.com',  '102 First St, CityA', 'pwd2'),
+('user3',  'User Three', 'user3@example.com',  '103 First St, CityA', 'pwd3'),
+('user4',  'User Four',  'user4@example.com',  '104 First St, CityA', 'pwd4'),
+('user5',  'User Five',  'user5@example.com',  '105 First St, CityA', 'pwd5'),
+('user6',  'User Six',   'user6@example.com',  '106 First St, CityA', 'pwd6'),
+('user7',  'User Seven', 'user7@example.com',  '107 First St, CityA', 'pwd7'),
+('user8',  'User Eight', 'user8@example.com',  '108 First St, CityA', 'pwd8'),
+('user9',  'User Nine',  'user9@example.com',  '109 First St, CityA', 'pwd9'),
+('user10', 'User Ten',   'user10@example.com', '110 First St, CityA', 'pwd10'),
+('user11', 'User Eleven','user11@example.com', '111 First St, CityB', 'pwd11'),
+('user12', 'User Twelve','user12@example.com', '112 First St, CityB', 'pwd12'),
+('user13', 'User Thirteen','user13@example.com','113 First St, CityB', 'pwd13'),
+('user14', 'User Fourteen','user14@example.com','114 First St, CityB', 'pwd14'),
+('user15', 'User Fifteen','user15@example.com', '115 First St, CityB', 'pwd15'),
+('user16', 'User Sixteen','user16@example.com', '116 First St, CityB', 'pwd16'),
+('user17', 'User Seventeen','user17@example.com','117 First St, CityB', 'pwd17'),
+('user18', 'User Eighteen','user18@example.com', '118 First St, CityB', 'pwd18'),
+('user19', 'User Nineteen','user19@example.com', '119 First St, CityB', 'pwd19'),
+('user20', 'User Twenty', 'user20@example.com',  '120 First St, CityB', 'pwd20'),
+('user21', 'User TwentyOne', 'user21@example.com', '121 Second St, CityC', 'pwd21'),
+('user22', 'User TwentyTwo', 'user22@example.com', '122 Second St, CityC', 'pwd22'),
+('user23', 'User TwentyThree', 'user23@example.com', '123 Second St, CityC', 'pwd23'),
+('user24', 'User TwentyFour', 'user24@example.com', '124 Second St, CityC', 'pwd24'),
+('user25', 'User TwentyFive', 'user25@example.com', '125 Second St, CityC', 'pwd25'),
+('user26', 'User TwentySix', 'user26@example.com', '126 Second St, CityC', 'pwd26'),
+('user27', 'User TwentySeven', 'user27@example.com', '127 Second St, CityC', 'pwd27'),
+('user28', 'User TwentyEight', 'user28@example.com', '128 Second St, CityC', 'pwd28'),
+('user29', 'User TwentyNine', 'user29@example.com', '129 Second St, CityC', 'pwd29'),
+('user30', 'User Thirty', 'user30@example.com', '130 Second St, CityC', 'pwd30'),
+('user31', 'User ThirtyOne', 'user31@example.com', '131 Third St, CityD', 'pwd31'),
+('user32', 'User ThirtyTwo', 'user32@example.com', '132 Third St, CityD', 'pwd32'),
+('user33', 'User ThirtyThree', 'user33@example.com', '133 Third St, CityD', 'pwd33'),
+('user34', 'User ThirtyFour', 'user34@example.com', '134 Third St, CityD', 'pwd34'),
+('user35', 'User ThirtyFive', 'user35@example.com', '135 Third St, CityD', 'pwd35'),
+('user36', 'User ThirtySix', 'user36@example.com', '136 Third St, CityD', 'pwd36'),
+('user37', 'User ThirtySeven', 'user37@example.com', '137 Third St, CityD', 'pwd37'),
+('user38', 'User ThirtyEight', 'user38@example.com', '138 Third St, CityD', 'pwd38'),
+('user39', 'User ThirtyNine', 'user39@example.com', '139 Third St, CityD', 'pwd39'),
+('user40', 'User Forty', 'user40@example.com', '140 Third St, CityD', 'pwd40'),
+('user41', 'User FortyOne', 'user41@example.com', '141 Fourth St, CityE', 'pwd41'),
+('user42', 'User FortyTwo', 'user42@example.com', '142 Fourth St, CityE', 'pwd42'),
+('user43', 'User FortyThree', 'user43@example.com', '143 Fourth St, CityE', 'pwd43'),
+('user44', 'User FortyFour', 'user44@example.com', '144 Fourth St, CityE', 'pwd44'),
+('user45', 'User FortyFive', 'user45@example.com', '145 Fourth St, CityE', 'pwd45'),
+('user46', 'User FortySix', 'user46@example.com', '146 Fourth St, CityE', 'pwd46'),
+('user47', 'User FortySeven', 'user47@example.com', '147 Fourth St, CityE', 'pwd47'),
+('user48', 'User FortyEight', 'user48@example.com', '148 Fourth St, CityE', 'pwd48'),
+('user49', 'User FortyNine', 'user49@example.com', '149 Fourth St, CityE', 'pwd49'),
+('user50', 'User Fifty', 'user50@example.com', '150 Fourth St, CityE', 'pwd50');
+
+
+-- ============================================
+-- 3. STATION TABLE 
+-- ============================================
+INSERT INTO station (station_code, station_name, zone) VALUES
+('DEL', 'Delhi', 'North'),
+('AGC', 'Agra Cantt', 'North'),
+('JAI', 'Jaipur', 'North'),
+('AHM', 'Ahmedabad', 'West'),
+('MUM', 'Mumbai', 'West'),
+('KOL', 'Kolkata', 'East'),
+('CHN', 'Chennai', 'South'),
+('BOM', 'Bombay', 'West'),
+('HYD', 'Hyderabad', 'South'),
+('LKO', 'Lucknow', 'North'),
+('BLR', 'Bangalore', 'South'),
+('LUCK', 'Lucknow Junction', 'North'),
+('PAT', 'Patna', 'East'),
+('CCU', 'Howrah', 'East'),
+('SUR', 'Surat', 'West');
+
+
+-- ============================================
+-- 4. TRAIN TABLE 
+-- ============================================
+-- In this example, t_date is the operational date (assumed same-day runs)
+INSERT INTO train (t_number, t_date, train_name, released_by, num_ac, num_sleeper, coach_no) VALUES
+(10101, '2025-05-01', 'Express Alpha', 'admin1', 5, 10, 15),
+(10202, '2025-05-01', 'Express Beta', 'admin2', 4, 12, 16),
+(10303, '2025-05-01', 'Express Gamma', 'admin3', 6, 8, 14),
+(10404, '2025-05-01', 'Express Delta', 'admin4', 5, 10, 15),
+(10505, '2025-05-01', 'Express Epsilon', 'admin5', 4, 12, 16),
+(10606, '2025-05-01', 'Express Zeta', 'admin1', 6, 8, 14),
+(10707, '2025-05-01', 'Express Eta', 'admin2', 5, 10, 15),
+(10808, '2025-05-01', 'Express Theta', 'admin3', 4, 12, 16),
+(10909, '2025-05-01', 'Express Iota', 'admin4', 6, 8, 14),
+(11010, '2025-05-01', 'Express Kappa', 'admin5', 5, 10, 15);
+
+
+-- ============================================
+-- 5. TRAIN_STATUS TABLE 
+-- ============================================
+INSERT INTO train_status (t_number, t_date, seats_b_ac, seats_b_sleeper) VALUES
+(10101, '2025-05-01', 0, 1),
+(10202, '2025-05-01', 1, 0),
+(10303, '2025-05-01', 2, 1),
+(10404, '2025-05-01', 1, 2),
+(10505, '2025-05-01', 0, 0),
+(10606, '2025-05-01', 1, 1),
+(10707, '2025-05-01', 0, 2),
+(10808, '2025-05-01', 2, 0),
+(10909, '2025-05-01', 1, 0),
+(11010, '2025-05-01', 0, 1);
+
+
+-- ============================================
+-- 6. ROUTE TABLE 
+-- ============================================
+-- For simplicity, assume “forward” direction for these routes.
+-- Here are sample routes for 4 trains (each with 4–5 stops)
+INSERT INTO route (t_number, station_code, arrival_time, departure_time, stop_number, distance) VALUES
+-- Train 10101 Route
+(10101, 'DEL', NULL, '06:00:00', 1, 0),
+(10101, 'AGC', '08:30:00', '08:35:00', 2, 200),
+(10101, 'JAI', '10:30:00', '10:35:00', 3, 150),
+(10101, 'MUM', '18:00:00', NULL, 4, 300),
+
+-- Train 10202 Route
+(10202, 'CHN', NULL, '07:00:00', 1, 0),
+(10202, 'BLR', '09:00:00', '09:05:00', 2, 250),
+(10202, 'HYD', '12:00:00', '12:05:00', 3, 300),
+(10202, 'MUM', '16:30:00', NULL, 4, 200),
+
+-- Train 10303 Route
+(10303, 'DEL', NULL, '05:30:00', 1, 0),
+(10303, 'LKO', '07:00:00', '07:05:00', 2, 120),
+(10303, 'PAT', '09:00:00', '09:05:00', 3, 180),
+(10303, 'CCU', '13:00:00', NULL, 4, 250),
+
+-- Train 10404 Route
+(10404, 'AHM', NULL, '06:30:00', 1, 0),
+(10404, 'SUR', '08:30:00', '08:35:00', 2, 180),
+(10404, 'MUM', '11:30:00', '11:35:00', 3, 220),
+(10404, 'BLR', '15:30:00', NULL, 4, 300),
+
+-- Additional routes for Train 10505 (example with 5 stops)
+(10505, 'JAI', NULL, '06:00:00', 1, 0),
+(10505, 'DEL', '07:30:00', '07:35:00', 2, 100),
+(10505, 'AGC', '09:00:00', '09:05:00', 3, 150),
+(10505, 'AHM', '12:00:00', '12:05:00', 4, 200),
+(10505, 'MUM', '17:00:00', NULL, 5, 250);
+
+
+-- (You can similarly add more rows for trains 10606, 10707, 10808, 10909, and 11010 to reach 50+ route rows overall.)
+
+
+-- ============================================
+-- 7. FARE TABLE 
+-- ============================================
+-- Sample fares based on class and distance ranges.
+INSERT INTO fare (class_type, distance, price) VALUES
+('AC', 0, 50.00),
+('AC', 100, 75.00),
+('AC', 200, 100.00),
+('Sleeper', 0, 20.00),
+('Sleeper', 100, 30.00),
+('Sleeper', 200, 40.00),
+('AC', 300, 120.00),
+('Sleeper', 300, 50.00),
+('AC', 400, 150.00),
+('Sleeper', 400, 60.00);
+
+
+-- ============================================
+-- 8. CONCESSION TABLE 
+-- ============================================
+INSERT INTO concession (concession_type, discount_percent) VALUES
+('Senior Citizen', 50),
+('Student', 25),
+('Military', 30),
+('Divyaang', 40),
+('None', 0);
+
+
+-- ============================================
+-- 9. TICKET TABLE 
+-- ============================================
+-- Generate 50 tickets with varying data.
+-- For simplicity, pnr_no is sequential.
+INSERT INTO ticket (pnr_no, coach, booked_by, booked_at, t_number, t_date, status, payment_status, src_station_code, dest_station_code) VALUES
+(1001, 'A1', 'user1', '2025-04-30 08:00:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1002, 'A2', 'user2', '2025-04-30 08:05:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1003, 'B1', 'user3', '2025-04-30 08:10:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1004, 'B2', 'user4', '2025-04-30 08:15:00', 10404, '2025-05-01', 'Cancelled', 'Refunded', 'AHM', 'BLR'),
+(1005, 'A1', 'user5', '2025-04-30 08:20:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+(1006, 'A1', 'user6', '2025-04-30 08:25:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1007, 'A2', 'user7', '2025-04-30 08:30:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1008, 'B1', 'user8', '2025-04-30 08:35:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1009, 'B2', 'user9', '2025-04-30 08:40:00', 10404, '2025-05-01', 'Confirmed', 'Paid', 'AHM', 'BLR'),
+(1010, 'A1', 'user10', '2025-04-30 08:45:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+-- Repeat similar patterns up to 50 tickets:
+(1011, 'A2', 'user11', '2025-04-30 08:50:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1012, 'B1', 'user12', '2025-04-30 08:55:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1013, 'B2', 'user13', '2025-04-30 09:00:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1014, 'A1', 'user14', '2025-04-30 09:05:00', 10404, '2025-05-01', 'Cancelled', 'Refunded', 'AHM', 'BLR'),
+(1015, 'A2', 'user15', '2025-04-30 09:10:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+(1016, 'B1', 'user16', '2025-04-30 09:15:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1017, 'B2', 'user17', '2025-04-30 09:20:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1018, 'A1', 'user18', '2025-04-30 09:25:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1019, 'A2', 'user19', '2025-04-30 09:30:00', 10404, '2025-05-01', 'Confirmed', 'Paid', 'AHM', 'BLR'),
+(1020, 'B1', 'user20', '2025-04-30 09:35:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+(1021, 'B2', 'user21', '2025-04-30 09:40:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1022, 'A1', 'user22', '2025-04-30 09:45:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1023, 'A2', 'user23', '2025-04-30 09:50:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1024, 'B1', 'user24', '2025-04-30 09:55:00', 10404, '2025-05-01', 'Cancelled', 'Refunded', 'AHM', 'BLR'),
+(1025, 'B2', 'user25', '2025-04-30 10:00:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+(1026, 'A1', 'user26', '2025-04-30 10:05:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1027, 'A2', 'user27', '2025-04-30 10:10:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1028, 'B1', 'user28', '2025-04-30 10:15:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1029, 'B2', 'user29', '2025-04-30 10:20:00', 10404, '2025-05-01', 'Confirmed', 'Paid', 'AHM', 'BLR'),
+(1030, 'A1', 'user30', '2025-04-30 10:25:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+(1031, 'A2', 'user31', '2025-04-30 10:30:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1032, 'B1', 'user32', '2025-04-30 10:35:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1033, 'B2', 'user33', '2025-04-30 10:40:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1034, 'A1', 'user34', '2025-04-30 10:45:00', 10404, '2025-05-01', 'Cancelled', 'Refunded', 'AHM', 'BLR'),
+(1035, 'A2', 'user35', '2025-04-30 10:50:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+(1036, 'B1', 'user36', '2025-04-30 10:55:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1037, 'B2', 'user37', '2025-04-30 11:00:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1038, 'A1', 'user38', '2025-04-30 11:05:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1039, 'A2', 'user39', '2025-04-30 11:10:00', 10404, '2025-05-01', 'Confirmed', 'Paid', 'AHM', 'BLR'),
+(1040, 'B1', 'user40', '2025-04-30 11:15:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+(1041, 'B2', 'user41', '2025-04-30 11:20:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1042, 'A1', 'user42', '2025-04-30 11:25:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1043, 'A2', 'user43', '2025-04-30 11:30:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1044, 'B1', 'user44', '2025-04-30 11:35:00', 10404, '2025-05-01', 'Cancelled', 'Refunded', 'AHM', 'BLR'),
+(1045, 'B2', 'user45', '2025-04-30 11:40:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM'),
+(1046, 'A1', 'user46', '2025-04-30 11:45:00', 10101, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'MUM'),
+(1047, 'A2', 'user47', '2025-04-30 11:50:00', 10202, '2025-05-01', 'Confirmed', 'Paid', 'CHN', 'MUM'),
+(1048, 'B1', 'user48', '2025-04-30 11:55:00', 10303, '2025-05-01', 'Confirmed', 'Paid', 'DEL', 'CCU'),
+(1049, 'B2', 'user49', '2025-04-30 12:00:00', 10404, '2025-05-01', 'Confirmed', 'Paid', 'AHM', 'BLR'),
+(1050, 'A1', 'user50', '2025-04-30 12:05:00', 10505, '2025-05-01', 'Confirmed', 'Paid', 'JAI', 'MUM');
+
+
+-- ============================================
+-- 10. PAYMENT TABLE 
+-- ============================================
+-- Create one payment record per ticket (50 records)
+INSERT INTO payment (username, pnr_no, amount, payment_time, status, transaction_id) VALUES
+('user1',  1001, 500.00, '2025-04-30 08:01:00', 'Success', 'TXN1001'),
+('user2',  1002, 600.00, '2025-04-30 08:06:00', 'Success', 'TXN1002'),
+('user3',  1003, 550.00, '2025-04-30 08:11:00', 'Success', 'TXN1003'),
+('user4',  1004, 0.00,   '2025-04-30 08:16:00', 'Refunded', 'TXN1004'),
+('user5',  1005, 700.00, '2025-04-30 08:21:00', 'Success', 'TXN1005'),
+('user6',  1006, 500.00, '2025-04-30 08:26:00', 'Success', 'TXN1006'),
+('user7',  1007, 600.00, '2025-04-30 08:31:00', 'Success', 'TXN1007'),
+('user8',  1008, 550.00, '2025-04-30 08:36:00', 'Success', 'TXN1008'),
+('user9',  1009, 580.00, '2025-04-30 08:41:00', 'Success', 'TXN1009'),
+('user10', 1010, 700.00, '2025-04-30 08:46:00', 'Success', 'TXN1010'),
+-- Continue similarly up to pnr_no 1050
+('user11', 1011, 500.00, '2025-04-30 08:51:00', 'Success', 'TXN1011'),
+('user12', 1012, 600.00, '2025-04-30 08:56:00', 'Success', 'TXN1012'),
+('user13', 1013, 550.00, '2025-04-30 09:01:00', 'Success', 'TXN1013'),
+('user14', 1014, 0.00,   '2025-04-30 09:06:00', 'Refunded', 'TXN1014'),
+('user15', 1015, 700.00, '2025-04-30 09:11:00', 'Success', 'TXN1015'),
+('user16', 1016, 500.00, '2025-04-30 09:16:00', 'Success', 'TXN1016'),
+('user17', 1017, 600.00, '2025-04-30 09:21:00', 'Success', 'TXN1017'),
+('user18', 1018, 550.00, '2025-04-30 09:26:00', 'Success', 'TXN1018'),
+('user19', 1019, 580.00, '2025-04-30 09:31:00', 'Success', 'TXN1019'),
+('user20', 1020, 700.00, '2025-04-30 09:36:00', 'Success', 'TXN1020'),
+('user21', 1021, 500.00, '2025-04-30 09:41:00', 'Success', 'TXN1021'),
+('user22', 1022, 600.00, '2025-04-30 09:46:00', 'Success', 'TXN1022'),
+('user23', 1023, 550.00, '2025-04-30 09:51:00', 'Success', 'TXN1023'),
+('user24', 1024, 0.00,   '2025-04-30 09:56:00', 'Refunded', 'TXN1024'),
+('user25', 1025, 700.00, '2025-04-30 10:01:00', 'Success', 'TXN1025'),
+('user26', 1026, 500.00, '2025-04-30 10:06:00', 'Success', 'TXN1026'),
+('user27', 1027, 600.00, '2025-04-30 10:11:00', 'Success', 'TXN1027'),
+('user28', 1028, 550.00, '2025-04-30 10:16:00', 'Success', 'TXN1028'),
+('user29', 1029, 580.00, '2025-04-30 10:21:00', 'Success', 'TXN1029'),
+('user30', 1030, 700.00, '2025-04-30 10:26:00', 'Success', 'TXN1030'),
+('user31', 1031, 500.00, '2025-04-30 10:31:00', 'Success', 'TXN1031'),
+('user32', 1032, 600.00, '2025-04-30 10:36:00', 'Success', 'TXN1032'),
+('user33', 1033, 550.00, '2025-04-30 10:41:00', 'Success', 'TXN1033'),
+('user34', 1034, 0.00,   '2025-04-30 10:46:00', 'Refunded', 'TXN1034'),
+('user35', 1035, 700.00, '2025-04-30 10:51:00', 'Success', 'TXN1035'),
+('user36', 1036, 500.00, '2025-04-30 10:56:00', 'Success', 'TXN1036'),
+('user37', 1037, 600.00, '2025-04-30 11:01:00', 'Success', 'TXN1037'),
+('user38', 1038, 550.00, '2025-04-30 11:06:00', 'Success', 'TXN1038'),
+('user39', 1039, 580.00, '2025-04-30 11:11:00', 'Success', 'TXN1039'),
+('user40', 1040, 700.00, '2025-04-30 11:16:00', 'Success', 'TXN1040'),
+('user41', 1041, 500.00, '2025-04-30 11:21:00', 'Success', 'TXN1041'),
+('user42', 1042, 600.00, '2025-04-30 11:26:00', 'Success', 'TXN1042'),
+('user43', 1043, 550.00, '2025-04-30 11:31:00', 'Success', 'TXN1043'),
+('user44', 1044, 0.00,   '2025-04-30 11:36:00', 'Refunded', 'TXN1044'),
+('user45', 1045, 700.00, '2025-04-30 11:41:00', 'Success', 'TXN1045'),
+('user46', 1046, 500.00, '2025-04-30 11:46:00', 'Success', 'TXN1046'),
+('user47', 1047, 600.00, '2025-04-30 11:51:00', 'Success', 'TXN1047'),
+('user48', 1048, 550.00, '2025-04-30 11:56:00', 'Success', 'TXN1048'),
+('user49', 1049, 580.00, '2025-04-30 12:01:00', 'Success', 'TXN1049'),
+('user50', 1050, 700.00, '2025-04-30 12:06:00', 'Success', 'TXN1050');
+
+
+-- ============================================
+-- 11. PASSENGER TABLE 
+-- ============================================
+-- Generate around 60 passenger entries (some tickets can have multiple passengers).
+INSERT INTO passenger (t_number, t_date, name, age, gender, pnr_no, berth_no, berth_type, coach_no, concession_type, status) VALUES
+(10101, '2025-05-01', 'Alice A', 30, 'F', 1001, 12, 'LB', 'A1', 'None', 'Confirmed'),
+(10101, '2025-05-01', 'Bob B', 45, 'M', 1001, 13, 'UB', 'A1', 'Senior Citizen', 'Confirmed'),
+(10202, '2025-05-01', 'Charlie C', 25, 'M', 1002, 7, 'LB', 'A2', 'Student', 'Confirmed'),
+(10303, '2025-05-01', 'Diana D', 35, 'F', 1003, 22, 'MB', 'B1', 'None', 'Confirmed'),
+(10404, '2025-05-01', 'Evan E', 50, 'M', 1004, 5, 'LB', 'B2', 'Military', 'Cancelled'),
+(10505, '2025-05-01', 'Fiona F', 28, 'F', 1005, 8, 'UB', 'A1', 'None', 'Confirmed'),
+(10101, '2025-05-01', 'George G', 40, 'M', 1006, 10, 'LB', 'A1', 'None', 'Confirmed'),
+(10202, '2025-05-01', 'Hannah H', 32, 'F', 1007, 15, 'UB', 'A2', 'Student', 'Confirmed'),
+(10303, '2025-05-01', 'Ian I', 29, 'M', 1008, 20, 'MB', 'B1', 'None', 'Confirmed'),
+(10404, '2025-05-01', 'Jane J', 38, 'F', 1009, 11, 'LB', 'B2', 'Senior Citizen', 'Confirmed'),
+-- ... (continue up to around 60 rows, possibly reusing some ticket numbers for multiple passengers)
+(10505, '2025-05-01', 'Kevin K', 33, 'M', 1010, 9, 'UB', 'A1', 'None', 'Confirmed'),
+(10101, '2025-05-01', 'Laura L', 27, 'F', 1011, 14, 'MB', 'A2', 'None', 'Confirmed'),
+(10202, '2025-05-01', 'Mike M', 42, 'M', 1012, 6, 'LB', 'B1', 'Military', 'Confirmed'),
+(10303, '2025-05-01', 'Nina N', 31, 'F', 1013, 18, 'UB', 'B2', 'Student', 'Confirmed'),
+(10404, '2025-05-01', 'Oscar O', 36, 'M', 1014, 16, 'MB', 'A1', 'None', 'Cancelled'),
+(10505, '2025-05-01', 'Paula P', 26, 'F', 1015, 12, 'LB', 'A2', 'None', 'Confirmed'),
+(10101, '2025-05-01', 'Quinn Q', 39, 'M', 1016, 7, 'LB', 'B1', 'None', 'Confirmed'),
+(10202, '2025-05-01', 'Rose R', 34, 'F', 1017, 13, 'UB', 'B2', 'None', 'Confirmed'),
+(10303, '2025-05-01', 'Sam S', 30, 'M', 1018, 10, 'LB', 'A1', 'None', 'Confirmed'),
+(10404, '2025-05-01', 'Tina T', 29, 'F', 1019, 15, 'UB', 'A2', 'Student', 'Confirmed');
+-- (Add more rows following similar pattern as needed to reach 60+ passengers.)
+
+
+-- ============================================
+-- 12. REFUND_LOG TABLE 
+-- ============================================
+-- For cancelled tickets, log refund details (about 20 rows)
+INSERT INTO refund_log (pnr_no, refund_time, refund_amount, refund_status) VALUES
+(1004, '2025-05-01 12:00:00', 580.00, 'Calculated'),
+(1014, '2025-05-01 12:05:00', 580.00, 'Calculated'),
+(1024, '2025-05-01 12:10:00', 580.00, 'Calculated'),
+(1034, '2025-05-01 12:15:00', 580.00, 'Calculated'),
+(1044, '2025-05-01 12:20:00', 580.00, 'Calculated');
+-- (Duplicate or add further rows if needed to approach 20 entries.)
+
+
+-- ============================================
+-- 13. TRAIN_RUNNING_DAYS TABLE 
+-- ============================================
+-- Assume each train runs every day; generate 7 rows per train (10 trains => 70 rows)
+INSERT INTO train_running_days (t_number, weekday) VALUES
+(10101, 'Monday'),
+(10101, 'Tuesday'),
+(10101, 'Wednesday'),
+(10101, 'Thursday'),
+(10101, 'Friday'),
+(10101, 'Saturday'),
+(10101, 'Sunday'),
+
+(10202, 'Monday'),
+(10202, 'Tuesday'),
+(10202, 'Wednesday'),
+(10202, 'Thursday'),
+(10202, 'Friday'),
+(10202, 'Saturday'),
+(10202, 'Sunday'),
+
+(10303, 'Monday'),
+(10303, 'Tuesday'),
+(10303, 'Wednesday'),
+(10303, 'Thursday'),
+(10303, 'Friday'),
+(10303, 'Saturday'),
+(10303, 'Sunday'),
+
+(10404, 'Monday'),
+(10404, 'Tuesday'),
+(10404, 'Wednesday'),
+(10404, 'Thursday'),
+(10404, 'Friday'),
+(10404, 'Saturday'),
+(10404, 'Sunday'),
+
+(10505, 'Monday'),
+(10505, 'Tuesday'),
+(10505, 'Wednesday'),
+(10505, 'Thursday'),
+(10505, 'Friday'),
+(10505, 'Saturday'),
+(10505, 'Sunday'),
+
+(10606, 'Monday'),
+(10606, 'Tuesday'),
+(10606, 'Wednesday'),
+(10606, 'Thursday'),
+(10606, 'Friday'),
+(10606, 'Saturday'),
+(10606, 'Sunday'),
+
+(10707, 'Monday'),
+(10707, 'Tuesday'),
+(10707, 'Wednesday'),
+(10707, 'Thursday'),
+(10707, 'Friday'),
+(10707, 'Saturday'),
+(10707, 'Sunday'),
+
+(10808, 'Monday'),
+(10808, 'Tuesday'),
+(10808, 'Wednesday'),
+(10808, 'Thursday'),
+(10808, 'Friday'),
+(10808, 'Saturday'),
+(10808, 'Sunday'),
+
+(10909, 'Monday'),
+(10909, 'Tuesday'),
+(10909, 'Wednesday'),
+(10909, 'Thursday'),
+(10909, 'Friday'),
+(10909, 'Saturday'),
+(10909, 'Sunday'),
+
+(11010, 'Monday'),
+(11010, 'Tuesday'),
+(11010, 'Wednesday'),
+(11010, 'Thursday'),
+(11010, 'Friday'),
+(11010, 'Saturday'),
+(11010, 'Sunday');
+
+
+-- ============================================
+-- 14. WAITLIST TABLE 
+-- ============================================
+-- Insert around 20 waitlist entries.
+INSERT INTO waitlist (pnr_no, position, status, waitlist_type) VALUES
+(1001, 1, 'Waiting', 'General'),
+(1002, 2, 'Waiting', 'General'),
+(1003, 3, 'Waiting', 'General'),
+(1004, 4, 'Waiting', 'General'),
+(1005, 5, 'Waiting', 'General'),
+(1006, 6, 'Waiting', 'General'),
+(1007, 7, 'Waiting', 'General'),
+(1008, 8, 'Waiting', 'General'),
+(1009, 9, 'Waiting', 'General'),
+(1010, 10, 'Waiting', 'General'),
+(1011, 11, 'Waiting', 'General'),
+(1012, 12, 'Waiting', 'General'),
+(1013, 13, 'Waiting', 'General'),
+(1014, 14, 'Waiting', 'General'),
+(1015, 15, 'Waiting', 'General'),
+(1016, 16, 'Waiting', 'General'),
+(1017, 17, 'Waiting', 'General'),
+(1018, 18, 'Waiting', 'General'),
+(1019, 19, 'Waiting', 'General'),
+(1020, 20, 'Waiting', 'General');
+
+
+-- ============================================
+-- 15. NOTIFICATION TABLE 
+-- ============================================
+-- Insert around 30 notifications
+INSERT INTO notification (username, message, created_at) VALUES
+('user1', 'Your ticket has been booked successfully.', '2025-04-30 08:01:00'),
+('user2', 'Your payment has been received.', '2025-04-30 08:06:00'),
+('user3', 'Your seat has been allocated.', '2025-04-30 08:11:00'),
+('user4', 'Your ticket has been cancelled.', '2025-04-30 08:16:00'),
+('user5', 'Refund process initiated.', '2025-04-30 08:21:00'),
+('user6', 'Your ticket has been booked successfully.', '2025-04-30 08:26:00'),
+('user7', 'Your payment has been received.', '2025-04-30 08:31:00'),
+('user8', 'Your seat has been allocated.', '2025-04-30 08:36:00'),
+('user9', 'Your ticket has been cancelled.', '2025-04-30 08:41:00'),
+('user10', 'Refund process initiated.', '2025-04-30 08:46:00'),
+('user11', 'Your ticket has been booked successfully.', '2025-04-30 08:51:00'),
+('user12', 'Your payment has been received.', '2025-04-30 08:56:00'),
+('user13', 'Your seat has been allocated.', '2025-04-30 09:01:00'),
+('user14', 'Your ticket has been cancelled.', '2025-04-30 09:06:00'),
+('user15', 'Refund process initiated.', '2025-04-30 09:11:00'),
+('user16', 'Your ticket has been booked successfully.', '2025-04-30 09:16:00'),
+('user17', 'Your payment has been received.', '2025-04-30 09:21:00'),
+('user18', 'Your seat has been allocated.', '2025-04-30 09:26:00'),
+('user19', 'Your ticket has been cancelled.', '2025-04-30 09:31:00'),
+('user20', 'Refund process initiated.', '2025-04-30 09:36:00'),
+('user21', 'Your ticket has been booked successfully.', '2025-04-30 09:41:00'),
+('user22', 'Your payment has been received.', '2025-04-30 09:46:00'),
+('user23', 'Your seat has been allocated.', '2025-04-30 09:51:00'),
+('user24', 'Your ticket has been cancelled.', '2025-04-30 09:56:00'),
+('user25', 'Refund process initiated.', '2025-04-30 10:01:00'),
+('user26', 'Your ticket has been booked successfully.', '2025-04-30 10:06:00'),
+('user27', 'Your payment has been received.', '2025-04-30 10:11:00'),
+('user28', 'Your seat has been allocated.', '2025-04-30 10:16:00'),
+('user29', 'Your ticket has been cancelled.', '2025-04-30 10:21:00'),
+('user30', 'Refund process initiated.', '2025-04-30 10:26:00');
+
+
+-- ============================================
+-- 16. SEAT_ALLOCATION TABLE 
+-- ============================================
+-- Insert around 50 seat allocations (again, pnr_no should match one in ticket table)
+INSERT INTO seat_allocation (pnr_no, t_number, t_date, coach, berth_no, berth_type, class_type,allocated_at) VALUES
+(1001, 10101, '2025-05-01', 'A1', 12, 'LB', 'AC', '2025-04-30 08:01:30'),
+(1002, 10202, '2025-05-01', 'A2', 7, 'LB', 'sleeper', '2025-04-30 08:06:30'),
+(1003, 10303, '2025-05-01', 'B1', 22, 'MB', 'AC', '2025-04-30 08:11:30'),
+(1004, 10404, '2025-05-01', 'B2', 5, 'LB', 'sleeper', '2025-04-30 08:16:30'),
+(1005, 10505, '2025-05-01', 'A1', 8, 'UB', 'AC', '2025-04-30 08:21:30'),
+(1006, 10101, '2025-05-01', 'A1', 10, 'LB', 'sleeper', '2025-04-30 08:26:30'),
+(1007, 10202, '2025-05-01', 'A2', 15, 'UB', 'AC', '2025-04-30 08:31:30'),
+(1008, 10303, '2025-05-01', 'B1', 20, 'MB', 'sleeper', '2025-04-30 08:36:30'),
+(1009, 10404, '2025-05-01', 'B2', 11, 'LB', 'AC', '2025-04-30 08:41:30'),
+(1010, 10505, '2025-05-01', 'A1', 9, 'UB', 'sleeper', '2025-04-30 08:46:30'),
+(1011, 10101, '2025-05-01', 'A2', 14, 'MB', 'AC', '2025-04-30 08:51:30'),
+(1012, 10202, '2025-05-01', 'B1', 6,  'LB', 'sleeper', '2025-04-30 08:56:30'),
+(1013, 10303, '2025-05-01', 'B2', 18, 'UB', 'AC', '2025-04-30 09:01:30'),
+(1014, 10404, '2025-05-01', 'A1', 16, 'MB', 'sleeper', '2025-04-30 09:06:30'),
+(1015, 10505, '2025-05-01', 'A2', 12, 'LB', 'AC', '2025-04-30 09:11:30'),
+(1016, 10101, '2025-05-01', 'B1', 7,  'LB', 'sleeper', '2025-04-30 09:16:30'),
+(1017, 10202, '2025-05-01', 'B2', 13, 'UB', 'AC', '2025-04-30 09:21:30'),
+(1018, 10303, '2025-05-01', 'A1', 10, 'LB', 'sleeper', '2025-04-30 09:26:30'),
+(1019, 10404, '2025-05-01', 'A2', 15, 'UB', 'AC', '2025-04-30 09:31:30'),
+(1020, 10505, '2025-05-01', 'B1', 9,  'UB', 'sleeper', '2025-04-30 09:36:30');
+-- (Continue to add more rows as needed to approach 50 entries.)
