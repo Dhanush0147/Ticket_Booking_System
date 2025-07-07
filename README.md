@@ -104,3 +104,10 @@ This project includes:
 - ✅ Sample refunds, payments, seat allocations, and waitlists
 
 ---
+
+## 👥 Contributors
+
+- **Siva Dhanush Paluchani** – [GitHub Profile](https://github.com/Dhanush0147)
+- **Bharath R** – [GitHub Profile](https://github.com/ranabharath)
+
+---
